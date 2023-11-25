@@ -42,7 +42,7 @@ console.log(person.eligibility());
 ```
 ### Live link
 
-
+https://jeya-rosini.github.io/cyberdude-challenges/
 
 ## Acknowledgement:
 
