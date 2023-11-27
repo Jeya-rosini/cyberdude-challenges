@@ -12,14 +12,14 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
     middleName : "rosini",
     lastName : "Sudhan",
     age : 26,
-    workExperiece : true,
     languageKnown : ["Tamil", "English", "Hindi"],
     fullName() {
        console.log(`${this.firstName} ${this.middleName} ${this.lastName}`);
     } ,
-    eligibility(workExperiece) {
+    eligibility() {
+      let workExperiece = false;
       if(workExperiece === true){
-         console.log(`You are is eligible for the intership`);
+         console.log(`You are eligible for the intership`);
       }else{
          console.log(`Sorry, You are is not eligible!
       Try again some other time`)
@@ -28,7 +28,7 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
  };
 // add or update data
 
-// person.fullName = "Hari";
+// person.location = "Madurai";
 
 //delete the data
 
@@ -37,8 +37,8 @@ This challenge is part of free internship (Fullstack Engineer) offered by [Cyber
 //check if the data exists
 // console.log(location in person);
 
-person.eligibility();
-console.log(person.eligibility());
+// person.eligibility();
+ console.log(person.eligibility());
 ```
 ### Live link
 

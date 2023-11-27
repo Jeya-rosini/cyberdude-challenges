@@ -19,4 +19,12 @@ I have to thank Mr. Anbuselvan Rocky [Mr.Anbuselvan Rocky](https://github.com/an
 
 ## Reference:
 
-- [#27 - JavaScript If-Else (With Examples)](https://www.youtube.com/watch?v=WebG_D9-U80&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=28)  
+- [#50 - Adding element to an JavaScript Array](https://www.youtube.com/watch?v=4W13qhHFSRE&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=51)  
+
+- [#51 - Finding an element in a JavaScript Array (Primitives)](https://www.youtube.com/watch?v=7AIMdzNQtkY&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=52)
+
+- [#54 - Removing an element in an JavaScript Array](https://www.youtube.com/watch?v=zF273qlctfQ&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=55)
+
+- [#55 - Emptying an JavaScript Array](https://www.youtube.com/watch?v=Ux7oPByuoWE&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=56)
+
+- [#56 - Combining & Extracting elements in JavaScript Arrays](https://www.youtube.com/watch?v=Nj7Y_faSr7c&list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa&index=57)

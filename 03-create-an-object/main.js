@@ -10,7 +10,7 @@
        console.log(`${this.firstName} ${this.middleName} ${this.lastName}`);
     } ,
     eligibility() {
-      let workExperiece = false;
+      let workExperiece = true;
       if(workExperiece === true){
          console.log(`You are eligible for the intership`);
       }else{
