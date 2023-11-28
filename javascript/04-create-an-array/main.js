@@ -90,9 +90,10 @@ const filterTime = buses
       console.log(`The pickup location is ${pickUp2}`);
     }
   return value;
-  });
+  })
+  .find((value) => value.busName === "IntrCity");
  
-console.log(filterTime.find((value) => value.busName === "IntrCity"));
+console.log(filterTime);
 
 // Sorting the element in an array
 // .sort()
