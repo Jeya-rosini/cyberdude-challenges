@@ -1,8 +1,8 @@
 // Creating a primitive and reference data of an anrray and manipulate it
 // Eg-1: Enquiring about the bus to travel to Chennai from Madurai - Primitive data type
 
-// const buses = ["IntrCity", "VKV", "Egloo", "SriSMS", "KNR"];
-// const buses2 = ["MetturSuper", "Chandraprakash", "RPTours"];
+const buses = ["IntrCity", "VKV", "Egloo", "SriSMS", "KNR"];
+const buses2 = ["MetturSuper", "Chandraprakash", "RPTours"];
 
 // Adding an element in array
 // .push()
@@ -39,32 +39,32 @@
 
 // Eg-2: Enquiring about the bus to travel to Chennai from Madurai - Refrence data type
 
-const buses = [
-  { 
-    busName: "KNR", 
-    time: "23", 
-    availableNit: true, 
-    pickUp1: "Mattuthavani"
-  },
-  {
-    busName: "Mercedes",
-    time: "6",
-    availableNit: false,
-    pickUp2: "Aarapalayam"
-  },
-  {
-    busName: "Parveen",
-    time: "10",
-    availableNit: false,
-    pickUp2: "Aarapalayam"
-  },
-  {
-    busName: "IntrCity",
-    time: "20",
-    availableNit: true,
-    pickUp1: "Mattuthavani"
-  },
-];
+// const buses = [
+//   { 
+//     busName: "KNR", 
+//     time: "23", 
+//     availableNit: true, 
+//     pickUp1: "Mattuthavani"
+//   },
+//   {
+//     busName: "Mercedes",
+//     time: "6",
+//     availableNit: false,
+//     pickUp2: "Aarapalayam"
+//   },
+//   {
+//     busName: "Parveen",
+//     time: "10",
+//     availableNit: false,
+//     pickUp2: "Aarapalayam"
+//   },
+//   {
+//     busName: "IntrCity",
+//     time: "20",
+//     availableNit: true,
+//     pickUp1: "Mattuthavani"
+//   },
+// ];
 
 // Testing an element in an array
 // .every() and .some()
@@ -79,21 +79,21 @@ const buses = [
 // Filtering and Finding of element in an array
 // .filter() and .find()
 
-const filterTime = buses
-  .filter(function (value) {
-    const time = value.time;
-    const pickUp1 = value.pickUp1;
-    const pickUp2 = value.pickUp2;
-    if (time >= 18 && time < 24) {
-      console.log(`The pick up location is ${pickUp1}`);
-    } else {
-      console.log(`The pickup location is ${pickUp2}`);
-    }
-  return value;
-  })
-  .find((value) => value.busName === "IntrCity");
+// const filterTime = buses
+//   .filter(function (value) {
+//     const time = value.time;
+//     const pickUp1 = value.pickUp1;
+//     const pickUp2 = value.pickUp2;
+//     if (time >= 18 && time < 24) {
+//       console.log(`The pick up location is ${pickUp1}`);
+//     } else {
+//       console.log(`The pickup location is ${pickUp2}`);
+//     }
+//   return value;
+//   })
+//   .find((value) => value.busName === "IntrCity");
  
-console.log(filterTime);
+// console.log(filterTime);
 
 // Sorting the element in an array
 // .sort()
@@ -104,3 +104,12 @@ console.log(filterTime);
 // });
 
 // console.log(sortTime);
+
+// Mapping the element in an array
+// .map()
+ 
+// const mapTime = buses.map((value) => {
+//   return (`${value.busName} arrives at ${value.time} hrs`);
+// });
+
+// console.log(mapTime);
