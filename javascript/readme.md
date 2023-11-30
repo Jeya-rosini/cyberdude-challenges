@@ -22,3 +22,4 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 | 02   | [02-object-CRUD](./02-object-CRUD/)                | [Youtube](https://www.youtube.com/watch?v=u9Nx8FowHgc) |
 | 03   | [03-array-CRUD](./03-array-CRUD/)                   | [Youtube](https://www.youtube.com/watch?v=hoUBsJLUpG4) |
 | 04   | [04-functions](./04-functions/)                     |                                  [Youtube](https://www.youtube.com/watch?v=XmZKIXmVOCA)                                   |
+| 05   | [05-Loops](./05-Loops/)                     |                                  [Youtube](https://www.youtube.com/watch?v=3ngcr30L_pw)                                   |
