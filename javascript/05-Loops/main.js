@@ -12,36 +12,36 @@ const stock = [
 
 // For-of Loop
 
-// for (let key of stock){
-//     console.log(key);
-// }
+for (let key of stock){
+    console.log(key);
+}
 
 // forEach Loop
 
-// stock.forEach((stock) => {
-//         console.log(`The items in our shop are ${stock.items}`);
-//     })
+stock.forEach((stock) => {
+        console.log(`The items in our shop are ${stock.items}`);
+    })
 
 // for loop
 
-// for (let i = 0; i < stock.length; i++){
-//     if (stock[i].isAvailable === true){
-//         console.log(`The item ${stock[i].items} is available`);
-//     } else if (stock[i].isAvailable === false){
-//         console.log(`The item ${stock[i].items} is not available`);
-//     }
-// }
+for (let i = 0; i < stock.length; i++){
+    if (stock[i].isAvailable === true){
+        console.log(`The item ${stock[i].items} is available`);
+    } else if (stock[i].isAvailable === false){
+        console.log(`The item ${stock[i].items} is not available`);
+    }
+}
 
 
 // for-in Loop
-// (function() {
-//     for (let key in stock){ 
-//         console.log(key, stock[key].items, stock[key].isAvailable);
-//     }
-//     const stockItems = {id: 6, items: "Pediacure", isAvailable: true};
-//     stock.push(stockItems);
-//     console.log (stock);
-// })();
+(function() {
+    for (let key in stock){ 
+        console.log(key, stock[key].items, stock[key].isAvailable);
+    }
+    const stockItems = {id: 6, items: "Pediacure", isAvailable: true};
+    stock.push(stockItems);
+    console.log (stock);
+})();
 
 
 
