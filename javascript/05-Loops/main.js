@@ -33,6 +33,18 @@ const stock = [
 // }
 
 
+// for-in Loop
+// (function() {
+//     for (let key in stock){ 
+//         console.log(key, stock[key].items, stock[key].isAvailable);
+//     }
+//     const stockItems = {id: 6, items: "Pediacure", isAvailable: true};
+//     stock.push(stockItems);
+//     console.log (stock);
+// })();
+
+
+
 
 
 
