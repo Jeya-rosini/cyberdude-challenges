@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-----Icon svg----->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./public/icon/FxemojiLinkedpaperclips.svg"
+    />
+    <title>Stay in Touch Homie!!</title>
+
+    <!--------------style.css-------->
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+
+  <body
+    class="max-w-xl mx-auto m-10 bg-gradient-to-r from-purple-300 via-pink-300 to-rose-300"
+  >
+    <form
+      class="bg-[#E0218A] text-[#822852] shadow-lg shadow-[#ED5C9B] rounded"
+    >
+      <div>
+        <div
+          class="m-4 p-4 space-y-2"
+        >
+         <h2 class="text-center font-extrabold font-pacifico text-4xl text-[#f5eefa] p-2"> Stay in Touch Homie🥂</h2>
+         <p class="text-lg text-center text-[#FACDE5]">Everything in the world dies, but memories passes thro'</p>
+        </div>
+        <hr class="w-full p-4">
+        <div class="flex justify-between space-x-4 p-6">
+          <div class="space-y-8">
+            <div class="space-x-2">
+              <lable for="nameHomie" class="text-white font-bold text-lg"
+                >Your name homie :</lable
+              >
+              <input
+                type="text"
+                id="nameHomie"
+                name="name"
+                placeholder="Un peru ena?"
+                class="outline-none rounded text-center p-1"
+              />
+            </div>
+            <div class="space-x-2">
+              <lable for="dobHomie" class="text-white font-bold text-lg"
+                >DOB :</lable
+              >
+              <input
+                type="date"
+                id="dobHomie"
+                name="dob"
+                placeholder="Yennaiku porantha"
+                class="rounded outline-none text-center p-1"
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              type="image"
+              id="photoHomie"
+              placeholder="Kindly insert ur image to remember"
+              class="border-2 border-[#FACDE5] rounded text-center"
+            />
+          </div>
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="nickNameHomie" class="text-white font-bold text-lg"
+            >I like to call you as :</lable
+          >
+          <input
+            type="text"
+            id="nickNameHomie"
+            name="name"
+            placeholder="Hai, chellam!"
+            class="outline-none rounded text-center p-1"
+          />
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="petNameHomie" class="text-white font-bold text-lg"
+            >You call me as :</lable
+          >
+          <input
+            type="text"
+            id="petNameHomie"
+            name="name"
+            placeholder="Una than da eruma!"
+            class="outline-none rounded text-center p-1"
+          />
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="favColor" class="text-white font-boldd text-lg"
+            >Your favorite color :</lable
+          >
+          <input
+            type="text"
+            id="favColor"
+            name="color"
+            placeholder="Karuppu than enaku pidicha kalaru"
+            class="outline-none rounded text-center p-1 w-80"
+          />
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="favMovie" class="text-white font-bold text-lg"
+            >Your favorite movie :</lable
+          >
+          <input
+            type="text"
+            id="favMovie"
+            name="movie"
+            placeholder="movie"
+            class="outline-none rounded text-center p-1"
+          />
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="favFood" class="text-white font-bold text-lg"
+            >Your favorite food :</lable
+          >
+          <input
+            type="text"
+            id="favFood"
+            name="food"
+            placeholder="Un item vanthutuchu"
+            class="outline-none rounded text-center p-1"
+          />
+        </div>
+        <div class="space-x-2 p-6">
+          <lable for="favPlace" class="text-white font-bold text-lg"
+            >Your favorite place :</lable
+          >
+          <input
+            type="text"
+            id="favPlace"
+            name="place"
+            placeholder="Ooru suthalama ?"
+            class="outline-none rounded text-center p-1"
+          />
+        </div>
+      </div>
+      <div class="p-2">
+        <h4 class="text-center font-extrabold text-[#f1efed] text-2xl underline">
+          How can I look👀 for you ?
+        </h4>
+        <div class="p-6 flex justify-between">
+          <div class="space-y-2">
+            <label for="numberHomie" class="text-white font-bold text-lg"
+              >Call me :</label
+            >
+            <input
+              type="tel"
+              placeholder="my number"
+              name="number"
+              id="numberHomie"
+              class="outline-none text-center rounded p-1"
+            />
+          </div>
+          <div class="space-y-2">
+            <label for="mailHomie" class="text-white font-bold text-lg"
+              >Mail me :</label
+            >
+            <input
+              type="email"
+              placeholder="unmailid@sollu.com"
+              name="email"
+              id="mailHomie"
+              class="outline-none text-center rounded p-1"
+            />
+          </div>
+        </div>
+        <div class="p-2 space-y-2">
+          <label for="addressHomie" class ="text-white font-bold text-lg p-2">Address :</label>
+          <textarea
+            placeholder = "tell me ur address"
+            rows="2"
+            cols="20"
+            class="outline-none p-4 w-full rounded"
+          >
+          </textarea>
+        </div>
+      </div>
+      <div class="p-6">
+        <button class="bg-white text-center w-full p-2 rounded font-bold text-md hover:cursor-pointer hover:bg-[#ed5c5c] hover:text-white">
+Let's stay connected
+        </button>
+      </div>
+    </form>
+
+    <!------JS code------->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
