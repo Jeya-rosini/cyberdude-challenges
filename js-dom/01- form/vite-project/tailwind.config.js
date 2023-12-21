@@ -9,9 +9,6 @@ export default {
       fontFamily: {
        'pacifico':[ 'Pacifico', 'cursive'],
       },
-      backgroundImage: {
-        'glitter': "url-('./public/images/slam book bg.png')"
-      },
     },
     plugins: [],
   }
