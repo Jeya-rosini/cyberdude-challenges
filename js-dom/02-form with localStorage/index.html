@@ -71,6 +71,7 @@
             placeholder="Type your name"
             id="name"
             class="inputClass"
+            name="name"
             required
           />
         </div>
@@ -87,6 +88,7 @@
             placeholder="Type your name"
             id="dob"
             class="inputClass"
+            name="dob"
             required
           />
         </div>
@@ -102,6 +104,7 @@
             placeholder="Type your name"
             value="corona"
             id="vaccinationName"
+            name="vaccinationName"
             readonly="readonly"
             class="m-2 text-gray-500 bg-slate-200 w-full outline-none px-2 py-1 rounded"
             required
@@ -120,6 +123,7 @@
               placeholder="Name of Hospital"
               id="hospitalName"
               class="inputClass"
+              name="hospitalName"
               required
             />
           </div>
@@ -129,24 +133,7 @@
               class="font-semibold text-[#5a189a]"
               >Place of the Hospital(District)</label
             >
-            <select
-              class="m-2 text-gray-400 bg-slate-200 outline-none px-2 py-1 rounded"
-              required
-              placeholder="Districts"
-              id="district"
-              name="Disricts"
-            >
-              <option value="" class="w-full">Choose District</option>
-              <option name="Chennai">Chennai</option>
-              <option name="Coimbatore">Coimbatore</option>
-              <option name="Trichy">Trichy</option>
-              <option name="Madurai">Madurai</option>
-              <option name="Thoothukudi">Thoothukudi</option>
-              <option name="Thirunelveli">Thirunelveli</option>
-              <option name="Ramanad">Ramanad</option>
-              <option name="Nagarkovil">Nagarkovil</option>
-              <option name="Kanchipuram">Kanchipuram</option>
-            </select>
+           <input type="text" placeholder="Place of the Hospital" name="district" id="district" class="inputClass" required />
           </div>
         </div>
 
@@ -176,30 +163,48 @@
               <td class="tableClass">1</td>
               <td class="tableClass">1<sup>st</sup>dose</td>
               <td class="tableClass">
-                <input type="date" class="outline-none bg-transparent" />
+                <input type="date" name="dateOfDose" class="outline-none bg-transparent" />
               </td>
             </tr>
             <tr class="tableClass">
               <td class="tableClass">2</td>
               <td class="tableClass">2<sup>st</sup>dose</td>
               <td class="tableClass">
-                <input type="date" class="outline-none bg-transparent" />
+                <input type="date" name="dateOfDose2" class="outline-none bg-transparent" />
               </td>
             </tr>
           </table>
         </div>
+        <div>
+          <button class="bg-[#5a189a] text-white rounded text-lg w-full p-1 m-2 text-center font-semibold hover:curosr-pointer hover:bg-[#7b2cbf]">
+            SUBMIT THE DETAILS
+          </button>
+        </div>
       </form>
  
   <!----------------------------- Link to result page -------------->    
-      <div class="text-center">
-        <a
-          href="./table.html"
-          class="text-sm underline hover:cursor-pointer text-[#5a189a] hover:text-[#7b2cbf]"
-          >Click to see the details</a
-        >
-      </div>
     </div>
-
+    <div class="hidden bg-[#f8f7ff] m-10 p-4 text-center rounded shadow-md shadow-[#9d4edd]" id="details">
+      <h4 class="text-center font-extrabold text-3xl text-[#3c096c] p-4 font-lato">
+          Details of the Patient
+      </h4>
+  <div>
+    <table class="border-2 border-[#3c096c] text-center table-auto mx-auto bg-inherit" id="detailsTable" name="detailsTable">
+      <tr class="tableClass">
+        <th class="tableClass">Serial.No</th>
+        <th class="tableClass">Name of the Patient</th>
+        <th class="tableClass">Name of the hospital</th>
+        <th class="tableClass">Place of the hospital</th>
+        <th class="tableClass">Dosage Details</th>
+        <th class="tableClass">Date of Vaccination</th>
+      </tr>
+      <tbody id="tableBody" name="tableBody"></tbody>
+    </table>
+  </div>
+  <a href="./index.html" class="text-sm underline hover:cursor-pointer text-[#5a189a] hover:text-[#7b2cbf]">Back to Home</a>
+  </div>
+  
     <script type="module" src="./assets/js/main.js"></script>
+  
   </body>
 </html>

@@ -12,3 +12,11 @@
 .tableClass{
     @apply p-3 border-2 border-[#3c096c];
 }
+
+.formError{
+    @apply text-sm !text-[#7b2cbf] p-1
+}
+
+.btn{
+    @apply p-1 rounded bg-[#3c096c] hover:bg-[#7b2cbf] text-white text-sm font-bold
+}
