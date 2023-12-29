@@ -5,14 +5,12 @@ import JustValidate from "just-validate";
 const formEl = document.getElementById("vaccination-details-form");
 const detailsEl = document.querySelector("#details");
 
-console.log(formEl);
+// console.log(formEl);
 const detailsKey = "vacination-details";
 
 const validateForm = new JustValidate(formEl, {
   validateBeforeSubmitting: true,
 });
-
-console.log(validateForm);
 
 validateForm.addField(
   "#name",
@@ -85,11 +83,11 @@ validateForm.addField(
 
 validateForm.onSuccess((e) => {
   const formData = new FormData(formEl).entries();
-  console.log(formData);
+//   console.log(formData);
 
   const entries = Object.fromEntries(formData);
 
-  console.log(entries);
+//   console.log(entries);
 
   const newData = [];
 
@@ -121,16 +119,21 @@ function getDetails() {
 
   const getVaccinationArray = JSON.parse(getVaccinationData);
 
-  console.log(getVaccinationArray);
+//   console.log(getVaccinationArray);
 
     const detailsTableEl = document.getElementById("detailsTable");
     
-    console.log(detailsTableEl);
+    // console.log(detailsTableEl);
 
-  if (getVaccinationArray && getVaccinationArray.length > 0) {
+    if (getVaccinationArray && getVaccinationArray.length > 0) {
+      
+        detailsEl.style.display = "hidden";
+
     const tableBodyEl = document.querySelector("#tableBody");
-      tableBodyEl.innerHTML = " ";
-    const finalData = [];
+    
+        tableBodyEl.innerHTML = " ";
+    
+        const finalData = [];
 
     getVaccinationArray.map((getVaccinationData, index) => {
       const trEl = document.createElement("tr");
@@ -164,8 +167,8 @@ function getDetails() {
       deleteBtnEl.className = "btn";
       deleteBtnEl.textContent = "Delete";
 
-      deleteBtnEl.addEventListener("click", () => {
-        deleteDetails(getVaccinationData);
+      deleteBtnEl.addEventListener("click", (e) => {
+          deleteDetails(getVaccinationData);
       });
 
       td6El.classList.add("tableClass");
@@ -174,15 +177,26 @@ function getDetails() {
       trEl.append(tdSerailNoEl, tdEl, td2El, td3El, td4El, td5El, td6El);
 
       finalData.push(trEl);
-      console.log(finalData);
+    //   console.log(finalData);
 
     });
 
       finalData.forEach((el) => tableBodyEl.append(el));
-      detailsEl.style.display="block"
-  } else {
-    alert("details not saved, kindly submit the form again!!")
+      detailsEl.style.display = "block";
   }
 }
 
+function deleteDetails(getVaccinationData) {
+    const confirmMessage = confirm(`Do you want to delete this data?`);
+    if (confirmMessage) {
+        const vaccinationData = localStorage.getItem(detailsKey);
+        const vaccinationDataArray = JSON.parse(vaccinationData);
+        console.log(vaccinationDataArray);
 
+        const deleteRecords = vaccinationDataArray.filter(value => value.name != getVaccinationData.name);
+        localStorage.setItem(detailsKey, JSON.stringify(deleteRecords));
+        alert("This record has been deleted");
+        getDetails();
+    }
+}
+getDetails();
