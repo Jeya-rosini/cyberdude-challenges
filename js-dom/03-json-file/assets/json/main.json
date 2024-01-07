@@ -1,0 +1,54 @@
+[{
+    "name" : "Hari Hara Sudan",
+    "dob" : "12-1997",
+    "active" : "true",
+    "location" : {
+        "city": "coimbatore",
+        "state" :"tamilnadu"
+    }
+},
+{
+    "name" : "Jeya Rosini",
+    "dob" : "08-1998",
+    "active" : "true",
+    "location" : {
+        "city": "Trichy",
+        "state" :"tamilnadu"
+    } 
+},
+{
+    "name" : "Kashvi Shree",
+    "dob" : "10-2000",
+    "active" : "true",
+    "location" : {
+        "city": "Madurai",
+        "state" :"tamilnadu"
+    } 
+},
+{
+    "name" : "Chandra Mohan",
+    "dob" : "01-1970",
+    "active" : "false",
+    "location" : {
+        "city": "Vijayawada",
+        "state" :"Andhra Pradesh"
+    } 
+},
+{
+    "name" : "Vijaya Lakshmi",
+    "dob" : "02-1987",
+    "active" : "true",
+    "location" : {
+        "city": "Madurai",
+        "state" :"tamilnadu"
+    } 
+},
+{
+    "name" : "Vignesh Palanivel",
+    "dob" : "12-1999",
+    "active" : "false",
+    "location" : {
+        "city": "coimbatore",
+        "state" :"tamilnadu"
+    } 
+}]
