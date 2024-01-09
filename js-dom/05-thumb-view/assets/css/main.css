@@ -1,3 +1,17 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600;700;800&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-icon{
+  @apply fill-[#0077b6] hover:cursor-pointer hover:fill-black
+}
+
+.side-panel{
+  @apply flex items-center justify-start hover:bg-neutral-100 hover:text-black rounded text-[#0077b6]
+}
