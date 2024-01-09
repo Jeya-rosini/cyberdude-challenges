@@ -9,9 +9,9 @@
 @tailwind utilities;
 
 .social-icon{
-  @apply fill-[#0077b6] hover:cursor-pointer hover:fill-black
+  @apply fill-[#0466C8] hover:cursor-pointer hover:fill-black
 }
 
 .side-panel{
-  @apply flex items-center justify-start hover:bg-neutral-100 hover:text-black rounded text-[#0077b6]
+  @apply flex items-center justify-start hover:bg-neutral-100 hover:text-[#0466C8] rounded text-[#002855]
 }
