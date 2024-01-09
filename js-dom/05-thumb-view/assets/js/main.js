@@ -13,12 +13,20 @@ buttonEl.addEventListener("click", () => {
   const url = link.value;
   const splitUrl = url.split("v=");
   const videoId = splitUrl[1];
-  console.log(videoId);
+  // console.log(videoId);
   const finalUrl = `http://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 //   console.log(finalUrl);
-      thumbnailLink.src = finalUrl; 
-  
+  thumbnailLink.src = finalUrl;
+  if (videoId.indexOf("&list=")) {
+    const splitPlaylistId = videoId.split("&list=");
+    const playlistId = splitPlaylistId[1];
+    // console.log(playlistId);
+    const finalLink = `https://i.ytimg.com/vi/${playlistId}/maxresdefault.jpg`
+    console.log(finalLink);
+  }
+ 
 });
 
 
 
+ 
