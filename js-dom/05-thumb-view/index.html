@@ -9,9 +9,9 @@
 <link rel="stylesheet" href="./assets/css/main.css"/>
 
   </head>
-  <body class="bg-[#001233]">
+  <body class="bg-[url('../../assets/image/background.jpg')]">
     <header>
-      <div class="flex justify-between items-center space-x-4 p-6 bg-neutral-200">
+      <div class="flex justify-between items-center space-x-4 m-4 p-6 bg-neutral-200">
         <div>
           <h3 class="font-bold text-2xl font-tektur tracking-wider text-[#0466C8]">Thumb View</h3>
         </div>
@@ -27,7 +27,7 @@
       </div>
     </header> 
 <main class=" grid grid-cols-4 gap-2">
-  <section class="flex-row bg-neutral-300 space-y-3 h-screen m-4 rounded p-6 ">
+  <section class="flex-row bg-neutral-300 space-y-3 h-screen mx-4 rounded p-6 ">
       <div class="side-panel">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15.713V8.287q0-.368.244-.588q.243-.22.568-.22q.101 0 .213.028q.11.028.212.083l5.842 3.733q.186.13.28.298q.093.167.093.379t-.093.379q-.094.167-.28.298l-5.842 3.733q-.102.055-.214.083q-.112.028-.213.028q-.325 0-.568-.22Q9 16.081 9 15.713"/></svg>
         <a href="#">Home</a>
@@ -47,11 +47,11 @@
     </section>
  <Section class="mt-8 col-span-12 col-start-2 align-middle">
   <div class="m-4 p-2">
-    <input type="text" placeholder="Paste your video link here" id="link" value=" " class="w-full text-black bg-gray-200 outline-none p-2 rounded">
+    <input type="text" placeholder="Paste your video link here" id="link" value=" " class="w-full text-black bg-gray-200 outline-none p-2 rounded" required>
     <button id="button" class="mt-4 p-2 bg-[#0466C8] text-white hover:bg-[#0353A4] rounded font-semibold">Video URL</button>
   </div>
   <div>
-    <img alt="youtube thumbnail" src="" class="rounded w-3/4 h-3/4" id="thumbnailImage">
+    <img alt="youtube thumbnail" src="" class="rounded w-3/4 h-3/4 hidden" id="thumbnailImage">
   </div>
  
  </Section>
