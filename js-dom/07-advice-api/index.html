@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon/GameIconsLifeSupport.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Total Damage</title>
 
     <link rel="stylesheet" href="./assets/css/main.css">
   </head>
-  <body>
-    <h5>Adive kelunga</h5>
+  <body class="bg-[url('/assets/image/advice.png')] bg-no-repeat bg-cover">
+   <main class="bg-[#402B3A] max-w-3xl mx-auto rounded mt-10 p-4 text-white">
+    
+       <h6 class="font-bold font-roboto tracking-widest text-3xl text-center m-6"> Advice of Today</h6>
+       <p class="m-2 p-2 text-center font-semibold text-lg bg-[#F8F4EC] rounded hidden" id="advice">
+
+       </p>
+       <button class="bg-[#D63484] p-2 w-full text-lg hover:cursor-pointer hover:bg-[#FF9BD2] font-semibold rounded flex justify-center items-center space-x-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><defs><mask id="ipTReload0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"><path fill="#555" stroke-linejoin="round" d="M22 43c-4.726-1.767-8.667-7.815-10.64-11.357c-.852-1.53-.403-3.408.964-4.502a3.83 3.83 0 0 1 5.1.283L19 29V17.5a2.5 2.5 0 0 1 5 0v6a2.5 2.5 0 0 1 5 0v2a2.5 2.5 0 0 1 5 0v2a2.5 2.5 0 0 1 5 0v7.868c0 1.07-.265 2.128-.882 3.003C37.095 39.82 35.256 42.034 33 43c-3.5 1.5-6.63 1.634-11 0"/><path stroke-linejoin="round" d="m36 12l-4 4l-4-4"/><path d="M14 13a9 9 0 1 1 17.849 1.651"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTReload0)"/></svg>Refresh</button>
+
+   </main> 
+ 
+
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
