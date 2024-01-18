@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/css/main.css"/>
   </head>
   <body class="bg-[#FFF5E4]">
+
+<!-----------header tag ------->
+
     <header class="flex justify-between items-center space-x-4 bg-[#FFC4C4] rounded shadow-md p-4 m-2">
         <div class="flex justify-center items-center space-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512" class="fill-[#850E35]"><path d="M169 57v430h78V57zM25 105v190h46V105zm158 23h18v320h-18zm128.725 7.69l-45.276 8.124l61.825 344.497l45.276-8.124zM89 153v270h62V153zm281.502 28.68l-27.594 11.773l5.494 12.877l27.594-11.773zm12.56 29.433l-27.597 11.772l5.494 12.877l27.593-11.772l-5.492-12.877zm12.555 29.434l-27.594 11.77l99.674 233.628l27.594-11.773zM25 313v30h46v-30zm190 7h18v128h-18zM25 361v126h46V361zm64 80v46h62v-46z"/></svg>
@@ -21,14 +24,17 @@
         <span class="side-menu">Log In/Sign Up</span>
       </div>
     </header>
-    <main class="relative">
+
+<!---------------form to  upload the courser------------->
+
+    <main class="relative mb-8 mx-6">
       <h6 class="text-3xl text-[#850E35] font-lato font-semibold text-center p-6 m-2">Upload your course details here</h6>
-      <img src="./assets/image/suksa-author.png" alt="author-image" class="w-80 h-80 absolute right-32 top-28">
+      <img src="./assets/image/suksa-author.png" alt="author-image" class="w-80 h-80 absolute right-32 top-48">
       <span class="font-lato text-md p-4"><sup>*</sup>Please fill all the input fields</span>
-      <form class="max-w-xl mx-8 my-2 p-4 rounded space-y-4 bg-[#FFC4C4]">
+      <form class="max-w-xl mx-8 my-2 p-4 rounded space-y-6 bg-[#FFC4C4]" id="upload-form">
       <div class="flex flex-col space-y-2">
         <label for="course-title" class="font-medium">Course Title</label>
-        <select class="rounded p-2 w-80">
+        <select class="rounded p-2 w-80 outline-none" id="course-title" name="course-title">
           <option value="">Select course title</option>
           <option value="html">HTML</option>
           <option value="css">CSS</option>
@@ -44,11 +50,11 @@
   <div class="flex items-center space-x-36">
     <div class="flex flex-col space-y-2">
       <label for="course-content" class="font-medium">Title of Course Content</label>
-      <input type="text" placeholder="Title of the content" id="course-content" class="placeholder-black rounded p-2">
+      <input type="text" placeholder="Title of the content" id="course-content" name="course-content" class="placeholder-black outline-none rounded p-2" required>
     </div>
     <div class="flex flex-col space-y-2">
       <label for="content-type" class="font-medium">Type of Content</label>
-      <select class="rounded p-2">
+      <select class="rounded p-2 outline-none" id="content-type" name="content-type" required>
         <option value="">Select type of content</option>
         <option value="video">Video</option>
         <option value="Document/PDF">Document / PDF</option>
@@ -57,11 +63,59 @@
     </div>
   </div>
   <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M1.718 1.594a.197.197 0 0 0-.198.197v8.521h8.919V7.947a.75.75 0 1 1 1.5 0v4.262c0 .937-.76 1.697-1.697 1.697H1.716c-.937 0-1.697-.76-1.697-1.697V1.791A1.699 1.699 0 0 1 1.718.094h6.156a.75.75 0 0 1 0 1.5zm1.894 1.413a.625.625 0 1 0 0 1.25h1.894a.625.625 0 1 0 0-1.25zM2.987 6.5c0-.345.28-.625.625-.625h.947a.625.625 0 1 1 0 1.25h-.947a.625.625 0 0 1-.625-.625m6.332 1.034a.5.5 0 0 0 .266-.14l4.099-4.118a1 1 0 0 0 0-1.42l-1.06-1.06a1 1 0 0 0-1.42 0L7.088 4.892a.5.5 0 0 0-.14.273l-.36 2.182a.5.5 0 0 0 .583.573z" clip-rule="evenodd"/></svg>
     <label for="author-name" class="font-medium">Author Name</label>
-    <input class="rounded placeholder-black w-80 p-2" type="text" placeholder="Name of the Author">
+    </div>
+    <input class="rounded placeholder-black w-80 p-2 outline-none" type="text" placeholder="Name of the Author" id="author-name" name="author-name" required>
   </div>
+  <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"/><rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="9s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect><rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect></svg>
+    <label for="time-length" class="font-medium">Time Length of the Content</label>
+    </div>
+    <input type="time" placeholder="time-length" id="time-length" name="time-length" class="placeholder-black rounded w-80 p-2" required>
+  </div>
+  <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><defs><mask id="ipSNotes0"><g fill="none" stroke-linejoin="round" stroke-width="4"><path fill="#fff" stroke="#fff" d="M8 6a2 2 0 0 1 2-2h20l10 10v28a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/><path stroke="#000" stroke-linecap="round" d="M16 20h16m-16 8h16"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSNotes0)"/></svg>
+    <label for="notes" class="font-medium">Notes <span class="font-normal">(optional)</span></label>
+    </div>
+    <textarea class="w-full h-28 rounded p-2 outline-none" id="notes" name="notes" required>Description of Course</textarea>
+  </div>
+  <button type="submit" id="button" class="rounded w-full bg-[#850E35] p-2 font-semibold text-white text-lg hover:cursor-pointer hover:bg-[#EE6983] hover:text-black">Submit</button>
       </form>
     </main>
+
+<!--------table of the course------------>
+
+   <section class="m-4">
+    <div class="text-center">
+      <h6 class="font-lato font-bold text-3xl text-[#850E35]">Syllabus</h6>
+    </div>
+    <div class="p-4 m-2">
+      <h6 class="font-lato font-bold text-lg text-[#EE6983]">Course Title : </h6>
+    </div>
+    <div>
+      <table class="border-2 border-[#3c096c] text-center table-auto mx-auto bg-inherit w-full" id="table-content" name="table-content">
+        <tr>
+          <th>Serial.No</th>
+          <th>Content Title</th>
+          <th>Type of Content</th>
+          <th>Author Name</th>
+          <th>Time Length</th>
+        </tr>
+        <tbody id="tableBody" name="tableBody"></tbody>
+      </table>
+    </div>
+   </section>
+
+<!---------copyright footer----------->
+
+    <footer class="bg-[#FFC4C4] p-4 mt-2 flex items-center justify-center space-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416a208 208 0 1 1 0-416m0 464a256 256 0 1 0 0-512a256 256 0 1 0 0 512m-56.6-199.4c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
+<p class="font-medium text-lg">copyright , All rights reserved 2024, <span class="text-[#850E35]">H. Jeya Rosini</span></p>
+    </footer>
     
     <script type="module" src="./assets/js/main.js"></script>
   </body>
