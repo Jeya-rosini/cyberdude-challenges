@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/GameIconsBookshelf-8KOYUIe4.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suksa - Learning App</title>
+
+    <script type="module" crossorigin src="./assets/index-8MFTIA0I.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-GiNPRlSV.css">
+  </head>
+  <body class="bg-[#FFF5E4]">
+
+<!-----------header tag ------->
+
+    <header class="flex justify-between items-center space-x-4 bg-[#FFC4C4] rounded shadow-md p-4 m-2">
+        <div class="flex justify-center items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512" class="fill-[#850E35]"><path d="M169 57v430h78V57zM25 105v190h46V105zm158 23h18v320h-18zm128.725 7.69l-45.276 8.124l61.825 344.497l45.276-8.124zM89 153v270h62V153zm281.502 28.68l-27.594 11.773l5.494 12.877l27.594-11.773zm12.56 29.433l-27.597 11.772l5.494 12.877l27.593-11.772l-5.492-12.877zm12.555 29.434l-27.594 11.77l99.674 233.628l27.594-11.773zM25 313v30h46v-30zm190 7h18v128h-18zM25 361v126h46V361zm64 80v46h62v-46z"/></svg>
+          <h3 class="font-lato font-bold text-3xl">Suksa</h3>
+        </div>
+      <div class="bg-[#EE6983] rounded p-4">
+        <span class="side-menu">Home</span>
+        <span class="side-menu">Learner</span>
+        <span class="side-menu">Author</span>
+        <span class="side-menu">Log In/Sign Up</span>
+      </div>
+    </header>
+
+<!---------------form to  upload the course------------->
+
+    <main class="relative mb-8 mx-6">
+      <h6 class="text-3xl text-[#850E35] font-lato font-semibold text-center p-6 m-2">Upload your course details here</h6>
+      <img src="./assets/suksa-author-RtdZqKyk.png" alt="author-image" class="w-80 h-80 absolute right-32 top-48 object-fill">
+      <span class="font-lato text-md p-4"><sup>*</sup>Please fill all the input fields</span>
+      <form class="max-w-xl mx-8 my-2 p-4 rounded space-y-6 bg-[#FFC4C4]" id="upload-form" name="upload-form">
+      <div class="flex flex-col space-y-2">
+        <label for="courseTitle" class="font-medium">Course Title</label>
+        <select class="rounded p-2 w-80 outline-none" id="courseTitle" name="courseTitle">
+          <option value="">Select course title</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="JavaScipt">JavaScript</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="SASS">SASS</option>
+          <option value="ReactJS">ReactJS</option>
+          <option value="Python">Python</option>
+          <option value="NodeJS">Node JS</option>
+        </select>
+      </div>
+  <div class="flex items-center space-x-36">
+    <div class="flex flex-col space-y-2">
+      <label for="courseContent" class="font-medium">Title of Course Content</label>
+      <input type="text" placeholder="Title of the content" id="courseContent" name="courseContent" class="placeholder-black outline-none rounded p-2" required>
+    </div>
+    <div class="flex flex-col space-y-2">
+      <label for="contentType" class="font-medium">Type of Content</label>
+      <select class="rounded p-2 outline-none" id="contentType" name="contentType" required>
+        <option value="">Select type of content</option>
+        <option value="video">Video</option>
+        <option value="Document/PDF">Document / PDF</option>
+        <option value="yt-url">YouTube Video</option>
+      </select>
+    </div>
+  </div>
+  <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M1.718 1.594a.197.197 0 0 0-.198.197v8.521h8.919V7.947a.75.75 0 1 1 1.5 0v4.262c0 .937-.76 1.697-1.697 1.697H1.716c-.937 0-1.697-.76-1.697-1.697V1.791A1.699 1.699 0 0 1 1.718.094h6.156a.75.75 0 0 1 0 1.5zm1.894 1.413a.625.625 0 1 0 0 1.25h1.894a.625.625 0 1 0 0-1.25zM2.987 6.5c0-.345.28-.625.625-.625h.947a.625.625 0 1 1 0 1.25h-.947a.625.625 0 0 1-.625-.625m6.332 1.034a.5.5 0 0 0 .266-.14l4.099-4.118a1 1 0 0 0 0-1.42l-1.06-1.06a1 1 0 0 0-1.42 0L7.088 4.892a.5.5 0 0 0-.14.273l-.36 2.182a.5.5 0 0 0 .583.573z" clip-rule="evenodd"/></svg>
+    <label for="authorName" class="font-medium">Author Name</label>
+    </div>
+    <input class="rounded placeholder-black w-80 p-2 outline-none" type="text" placeholder="Name of the Author" id="authorName" name="authorName" required>
+  </div>
+  <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"/><rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="9s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect><rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect></svg>
+    <label for="timeLength" class="font-medium">Time Length of the Content</label>
+    </div>
+    <input type="time" placeholder="time-length" id="timeLength" name="timeLength" class="placeholder-black rounded w-80 p-2" required>
+  </div>
+  <div class="flex flex-col space-y-2">
+    <div class="flex items-center space-x-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><defs><mask id="ipSNotes0"><g fill="none" stroke-linejoin="round" stroke-width="4"><path fill="#fff" stroke="#fff" d="M8 6a2 2 0 0 1 2-2h20l10 10v28a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/><path stroke="#000" stroke-linecap="round" d="M16 20h16m-16 8h16"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSNotes0)"/></svg>
+    <label for="notes" class="font-medium">Notes <span class="font-normal">(optional)</span></label>
+    </div>
+    <textarea class="w-full h-28 rounded p-2 outline-none" id="notes" name="notes" required>Description of Course</textarea>
+  </div>
+  <button type="submit" id="button" class="rounded w-full bg-[#850E35] p-2 font-semibold text-white text-lg hover:cursor-pointer hover:bg-[#EE6983] hover:text-black">Submit</button>
+      </form>
+    </main>
+
+<!--------table of the course------------>
+
+   <section class="m-4 hidden" id="syllabusDisplay">
+    <div class="text-center">
+      <h6 class="font-lato p-4 font-bold text-3xl text-[#850E35]">Syllabus</h6>
+    </div>
+    <div>
+      <table class="border-2 border-[#FFC4C4] text-center table-auto mx-auto bg-inherit w-full" id="tableContent" name="tableContent">
+        <tr class="table-class">
+          <th class="table-class">Serial.No</th>
+          <th class="table-class">Course Title</th>
+          <th class="table-class">Content Title</th>
+          <th class="table-class">Type of Content</th>
+          <th class="table-class">Author Name</th>
+          <th class="table-class">Time Length</th>
+          <th class="table-class">Action</th>
+        </tr>
+        <tbody id="syllabusTable" name="syllabusTable"></tbody>
+      </table>
+    </div>
+    <div class="text-center p-2 m-2">
+      <a href="./index.html" class="font-semibold text-lg text-[#850E35] hover:cursor-pointer hover:text-[#EE6983] underline underline-offset-2" id="go-top">Go Back</a></div>
+   </section>
+
+<!---------copyright footer----------->
+
+    <footer class="bg-[#FFC4C4] p-4 mt-2 flex items-center justify-center space-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M256 48a208 208 0 1 1 0 416a208 208 0 1 1 0-416m0 464a256 256 0 1 0 0-512a256 256 0 1 0 0 512m-56.6-199.4c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
+<p class="font-medium text-lg">copyright , All rights reserved 2024, <span class="text-[#850E35]">H. Jeya Rosini</span></p>
+<div class="flex space-x-2 items-center">
+  <a href="https://github.com/Jeya-rosini" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="fill-[#850E35] hover:fill-black hover:cursor-pointer"><path d="M12 0a12 12 0 1 0 0 24a12 12 0 0 0 0-24m3.163 21.783h-.093a.513.513 0 0 1-.382-.14a.513.513 0 0 1-.14-.372v-1.406c.006-.467.01-.94.01-1.416a3.693 3.693 0 0 0-.151-1.028a1.832 1.832 0 0 0-.542-.875a8.014 8.014 0 0 0 2.038-.471a4.051 4.051 0 0 0 1.466-.964c.407-.427.71-.943.885-1.506a6.77 6.77 0 0 0 .3-2.13a4.138 4.138 0 0 0-.26-1.476a3.892 3.892 0 0 0-.795-1.284a2.81 2.81 0 0 0 .162-.582c.033-.2.05-.402.05-.604c0-.26-.03-.52-.09-.773a5.309 5.309 0 0 0-.221-.763a.293.293 0 0 0-.111-.02h-.11c-.23.002-.456.04-.674.111a5.34 5.34 0 0 0-.703.26a6.503 6.503 0 0 0-.661.343c-.215.127-.405.249-.573.362a9.578 9.578 0 0 0-5.143 0a13.507 13.507 0 0 0-.572-.362a6.022 6.022 0 0 0-.672-.342a4.516 4.516 0 0 0-.705-.261a2.203 2.203 0 0 0-.662-.111h-.11a.29.29 0 0 0-.11.02a5.844 5.844 0 0 0-.23.763c-.054.254-.08.513-.081.773c0 .202.017.404.051.604c.033.199.086.394.16.582A3.888 3.888 0 0 0 5.702 10a4.142 4.142 0 0 0-.263 1.476a6.871 6.871 0 0 0 .292 2.12c.181.563.483 1.08.884 1.516c.415.422.915.75 1.466.964c.653.25 1.337.41 2.033.476a1.828 1.828 0 0 0-.452.633a2.99 2.99 0 0 0-.2.744a2.754 2.754 0 0 1-1.175.27a1.788 1.788 0 0 1-1.065-.3a2.904 2.904 0 0 1-.752-.824a3.1 3.1 0 0 0-.292-.382a2.693 2.693 0 0 0-.372-.343a1.841 1.841 0 0 0-.432-.24a1.2 1.2 0 0 0-.481-.101c-.04.001-.08.005-.12.01a.649.649 0 0 0-.162.02a.408.408 0 0 0-.13.06a.116.116 0 0 0-.06.1a.33.33 0 0 0 .14.242c.093.074.17.131.232.171l.03.021c.133.103.261.214.382.333c.112.098.213.209.3.33c.09.119.168.246.231.381c.073.134.15.288.231.463c.188.474.522.875.954 1.145c.453.243.961.364 1.476.351c.174 0 .349-.01.522-.03c.172-.028.343-.057.515-.091v1.743a.5.5 0 0 1-.533.521h-.062a10.286 10.286 0 1 1 6.324 0z"/></svg></a>
+  <a href="https://www.linkedin.com/in/jeya-rosini-a4255421a/" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20" class="fill-[#850E35] hover:fill-black hover:cursor-pointer"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z"/></svg></a>
+</div>    
+</footer>
+    
+  </body>
+</html>
