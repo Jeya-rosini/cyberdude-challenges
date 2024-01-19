@@ -25,3 +25,4 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 | 05   | [05-thumb-view](05-thumb-view) | [Youtube] ( ) |
 | 06   | [GitHub API](06-repo-api)      | [Youtube] ( ) |
 | 07   | [Advice-api](07-advice-api)    | [Youtube] ( ) |
+| 08   | [Suksa-syllabus-organizer](08-suksa-syllabus-organizer)  | [YouTube] ()
