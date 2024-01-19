@@ -1,3 +1,10 @@
+# Create Syllabus Organizer (JS-DOM Challenge)
+
+This challenge is part of free internship (Fullstack Engineer) offered by [CyberDude Netwroks Pvt. Ltd.](https://www.cyberdudenetworks.com/). You can find all the source code and live links below.
+
+> Task #1: creating a syllabus organizer for course
+
+```js
 import JustValidate from "just-validate";
 import { v4 as uuidv4 } from "uuid";
 
@@ -203,3 +210,23 @@ getData();
 refresh.addEventListener("click", (e) => {
   window.location.href = "/";
 })
+
+```
+### Live link
+
+https://jeya-rosini.github.io/cyberdude-challenges/
+
+## Screenshots:
+
+-![Suksa-Evolution](assets/image/Suksa-evolution.png)
+-![Suksa-Draft](assets/image/suksa-draft.jpeg)
+
+## Acknowledgement:
+
+I have to thank Mr. Anbuselvan Rocky [Mr.Anbuselvan Rocky](https://github.com/anburocky3) for the mentoring throughout this challenge
+
+## Reference:
+
+- [#41 - Accessing Forms and Elements](https://www.youtube.com/watch?v=8MibgZLbFRs&list=PL73Obo20O_7jhOOPDASWk0PVcRxGEyrm9&index=41)  
+
+- [#42 - Javascript Form Submit and FormData Event](https://www.youtube.com/watch?v=RNvGJhNT2JM&list=PL73Obo20O_7jhOOPDASWk0PVcRxGEyrm9&index=42) 
