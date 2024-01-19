@@ -9,3 +9,7 @@
 .side-menu{
     @apply text-lg font-medium p-2 space-x-2 hover:text-white hover:cursor-pointer
 }
+
+.table-class{
+  @apply p-2 border-2 border-[#FFC4C4] rounded
+}
