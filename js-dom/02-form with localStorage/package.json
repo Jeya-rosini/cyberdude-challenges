@@ -21,6 +21,7 @@
     "vite": "^5.0.10"
   },
   "dependencies": {
+    "datejs": "^1.0.0-rc3",
     "global": "^4.4.0",
     "just-validate": "^4.3.0"
   }

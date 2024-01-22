@@ -14,7 +14,7 @@
 }
 
 .formError{
-    @apply text-sm !text-[#7b2cbf] p-1
+    @apply text-sm !text-red-700 p-1
 }
 
 .btn{

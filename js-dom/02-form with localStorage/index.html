@@ -11,6 +11,7 @@
     <title>Corona Vaccination Details</title>
 
     <link rel="stylesheet" href="./assets/css/main.css" />
+   
   </head>
 
   <body
@@ -163,14 +164,14 @@
               <td class="tableClass">1</td>
               <td class="tableClass">1<sup>st</sup>dose</td>
               <td class="tableClass">
-                <input type="date" name="dateOfDose" class="outline-none bg-transparent" />
+                <input type="date" name="dateOfDose" class="outline-none bg-transparent" required/>
               </td>
             </tr>
             <tr class="tableClass">
               <td class="tableClass">2</td>
               <td class="tableClass">2<sup>st</sup>dose</td>
               <td class="tableClass">
-                <input type="date" name="dateOfDose2" class="outline-none bg-transparent" />
+                <input type="date" name="dateOfDose2" class="outline-none bg-transparent" required/>
               </td>
             </tr>
           </table>
@@ -191,12 +192,11 @@
   <div>
     <table class="border-2 border-[#3c096c] text-center table-auto mx-auto bg-inherit" id="detailsTable" name="detailsTable">
       <tr class="tableClass">
-        <th class="tableClass">Serial.No</th>
+        <th class="tableClass">Serial No.</th>
         <th class="tableClass">Name of the Patient</th>
-        <th class="tableClass">Name of the hospital</th>
-        <th class="tableClass">Place of the hospital</th>
-        <th class="tableClass">Dosage Details</th>
-        <th class="tableClass">Date of Vaccination</th>
+        <th class="tableClass">Name of the hospital (Place)</th>
+        <th class="tableClass">Date of 1<sup>st</sup> Dosage</th>
+        <th class="tableClass">Date of 2<sup>nd</sup> Dosage</th>
       </tr>
       <tbody id="tableBody" name="tableBody"></tbody>
     </table>
@@ -204,7 +204,7 @@
   <a href="./index.html" class="text-sm underline hover:cursor-pointer text-[#5a189a] hover:text-[#7b2cbf]">Back to Home</a>
   </div>
   
-    <script type="module" src="./assets/js/main.js"></script>
+   <script type="module" src="./assets/js/main.js"></script>
   
   </body>
 </html>

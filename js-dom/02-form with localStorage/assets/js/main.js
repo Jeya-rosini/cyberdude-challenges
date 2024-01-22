@@ -4,6 +4,10 @@ import JustValidate from "just-validate";
 // getting the input fields
 const formEl = document.getElementById("vaccination-details-form");
 const detailsEl = document.querySelector("#details");
+const date = new Date();
+const formatDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+console.log(formatDate);
+
 
 // console.log(formEl);
 const detailsKey = "vacination-details";
@@ -140,7 +144,7 @@ function getDetails() {
       const tdEl = document.createElement("td");
       const tdSerailNoEl = document.createElement("td");
       const td2El = document.createElement("td");
-      const td3El = document.createElement("td");
+      const pEl = document.createElement("p");
       const td4El = document.createElement("td");
       const td5El = document.createElement("td");
       const td6El = document.createElement("td");
@@ -155,8 +159,9 @@ function getDetails() {
       td2El.classList.add("tableClass");
       td2El.textContent = getVaccinationData.hospitalName;
 
-      td3El.classList.add("tableClass");
-      td3El.textContent = getVaccinationData.district;
+      pEl.classList.add("text-sm", "font-bold")
+      pEl.textContent = `(${getVaccinationData.district})`;
+      td2El.appendChild(pEl)
 
       td4El.classList.add("tableClass");
       td4El.textContent = getVaccinationData.dateOfDose;
@@ -174,7 +179,7 @@ function getDetails() {
       td6El.classList.add("tableClass");
       td6El.append(deleteBtnEl);
 
-      trEl.append(tdSerailNoEl, tdEl, td2El, td3El, td4El, td5El, td6El);
+      trEl.append(tdSerailNoEl, tdEl, td2El, td4El, td5El, td6El);
 
       finalData.push(trEl);
     //   console.log(finalData);
