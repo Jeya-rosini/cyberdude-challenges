@@ -15,11 +15,11 @@ buttonEl.addEventListener("click", () => {
   const finalUrl = `http://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
   //   console.log(finalUrl);
   thumbnailLink.src = finalUrl;
-  if (videoId.indexOf("&list=")) {
-    const splitPlaylistId = videoId.split("&list=");
+  if (videoId.indexOf("&")) {
+    const splitPlaylistId = videoId.split("&")[0];
     const playlistId = splitPlaylistId[1];
     // console.log(playlistId);
-    const finalLink = `https://i.ytimg.com/vi/${playlistId}/maxresdefault.jpg`;
+    const finalLink = `https://i.ytimg.com/vi/${videoId}&list=${playlistId}/maxresdefault.jpg`;
     console.log(finalLink);
     thumbnailLink.src = finalLink;
   }           
