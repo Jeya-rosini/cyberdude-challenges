@@ -47,7 +47,7 @@ function profile(user) {
 
 // main division card
   const mainDiv = document.createElement("div");
-  mainDiv.classList.add("bg-[#F7D9D9]","m-2","p-2", "text-center","rounded-full")
+  mainDiv.classList.add("bg-[#F7D9D9]","m-2","p-2", "text-center","rounded")
 
   //sub-division-1
   const firstDiv = document.createElement("div");
