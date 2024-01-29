@@ -11,10 +11,10 @@ const TheNavbar = () => {
          <h3 class="text-white text-4xl font-extrabold font-cabin tracking-widest">Wander<span className="text-[#FFD369]">Lust</span></h3>
         </div>  
         <div className="flex justify-center items-center space-x-8 text-lg font-cabin tracking-wider">
-           <span><Link to={'/'}>Home</Link></span>
-           <span><Link to={'/about'}>About</Link></span>
-           <span><Link to={'/destination'}>Destination</Link></span>
-           <span><Link to={'/contact'}>Contact</Link></span>
+           <span><Link to={'/'} className="hover:cursor-pointer hover:text-[#ffd369] hover:underline hover:underline-offset-4">Home</Link></span>
+           <span><Link to={'/about'} className="hover:cursor-pointer hover:text-[#ffd369] hover:underline hover:underline-offset-4">About</Link></span>
+           <span><Link to={'/destination'} className="hover:cursor-pointer hover:text-[#ffd369] hover:underline hover:underline-offset-4">Destination</Link></span>
+           <span><Link to={'/contact'} className="hover:cursor-pointer hover:text-[#ffd369] hover:underline hover:underline-offset-4">Contact</Link></span>
         </div>
     </div>
 }
