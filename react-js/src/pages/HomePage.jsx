@@ -2,7 +2,7 @@ const HomePage = () => {
     return <div>
         <div>
             <div>
-                <img src="../src/assets/image/wander-background.jpg" alt="wander image" className="h-60 w-full object-cover"></img>
+                <img src="https://www.bhmpics.com/downloads/hiking-wallpaper-/11.5418340-mountain-sunset-pastel-adventure-outdoor-cloud-sky-hiking-landscape-mountain-range-person-hike-explore-wallpaper-nature-wallpapers-nature-backgrounds-evening-altitude-horizon-colorful-free-sto.jpg" alt="wander image" className="h-60 w-full object-cover"></img>
             </div>
             <div className="m-4 p-2 text-center font-cabin tracking-wider">
                 <h5 className="font-bold text-4xl">Why <span className="text-[#FFD369]">Wander ?</span></h5>
@@ -11,7 +11,7 @@ const HomePage = () => {
             <div className="m-4">
                 <h5 className="font-bold font-cabin tracking-wider text-4xl text-center">Why <span className="text-[#ffd369]">WanderLust ?</span></h5>
                 <div className="flex justify-center items-center space-x-4">
-                <div><img src="../src/assets/image/trekking.png" alt="trekking" className="w-80 h-32 object-contain"></img></div>
+                <div><img src="https://png.pngtree.com/png-clipart/20230913/original/pngtree-adventurous-clipart-cartoon-guy-hiking-and-trekking-on-the-mountains-vector-png-image_11069267.png" alt="trekking" className="w-80 h-32 object-contain"></img></div>
                 <div>
                         <p className="font-cabin tracking-wider text-xl text-left">WanderLust gives the exploring options of your choice. Description of each and every place with map locations attached.
                         WanderLust guided you with expertise in all fields of travelling</p>
