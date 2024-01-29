@@ -1,5 +1,8 @@
+
 const DestinationPage = () => {
-    return <h1 className="font-bold">Destination</h1>
+    return <div>
+        <h4>Your Destination is here</h4>
+    </div>
 }
 
 export default DestinationPage
