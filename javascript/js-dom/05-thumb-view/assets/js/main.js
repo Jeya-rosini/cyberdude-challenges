@@ -13,14 +13,18 @@ buttonEl.addEventListener("click", () => {
   const videoId = splitUrl[1];
   // console.log(videoId);
   const finalUrl = `http://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-  //   console.log(finalUrl);
-  thumbnailLink.src = finalUrl;
-  if (videoId.indexOf("&")) {
-    const splitPlaylistId = videoId.split("&")[0];
-    const playlistId = splitPlaylistId[1];
-    // console.log(playlistId);
-    const finalLink = `https://i.ytimg.com/vi/${videoId}&list=${playlistId}/maxresdefault.jpg`;
-    console.log(finalLink);
-    thumbnailLink.src = finalLink;
-  }           
+    console.log(finalUrl);
+  thumbnailLink.setAttribute("src", finalUrl)
+
+  // if (videoId.indexOf("&")) {
+  //   const splitPlaylistId = videoId.split("&")[0];
+  //   const playlistId = splitPlaylistId[1];
+  //   // console.log(playlistId);
+  //   const finalLink = `https://i.ytimg.com/vi/${videoId}&list=${playlistId}/maxresdefault.jpg`;
+  //   console.log(finalLink);
+  //   thumbnailLink.src = finalLink;
+  // }           
+  thumbnailLink.style.display = "block"
 });
+
+

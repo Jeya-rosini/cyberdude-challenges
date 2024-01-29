@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 .side-menu{
-    @apply sm:text-lg sm:font-medium sm:p-2 sm:space-x-2 sm:hover:text-white sm:hover:cursor-pointer
+    @apply text-lg font-medium p-2 space-x-2 hover:text-white hover:cursor-pointer
 }
 
 .table-class{

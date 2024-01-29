@@ -68,6 +68,14 @@ validate.addField("#timeLength", [
   {
     rule: "required",
   },
+  {
+    rule: "maxLength",
+    value: 24
+  },
+  {
+    rule: "minLength",
+    value: 1
+  },
 ]);
 validate.addField("#notes", [
   {
@@ -200,6 +208,3 @@ function deleteData(course) {
 
 getData();
 
-refresh.addEventListener("click", (e) => {
-  window.location.href = "/";
-})

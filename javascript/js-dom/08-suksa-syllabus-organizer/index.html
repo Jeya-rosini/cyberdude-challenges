@@ -18,10 +18,10 @@
           <h3 class="font-lato font-bold text-3xl">Suksa</h3>
         </div>
       <div class="bg-[#EE6983] rounded sm:p-4 p-1">
-        <span class="sm:side-menu text-sm font-medium space-x-1">Home</span>
-        <span class="sm:side-menu text-sm font-medium space-x-1">Learner</span>
-        <span class="sm:side-menu text-sm font-medium space-x-1">Author</span>
-        <span class="sm:side-menu text-sm font-medium space-x-1">Log In/Sign Up</span>
+      <a href="#">  <span class="side-menu">Home</span></a>
+       <a href="#"> <span class="side-menu">Learner</span></a>
+      <a href="http://localhost:5173/CyberDude-Challenges/js-dom/08-suksa-syllabus-organizer">  <span class="side-menu">Author</span></a>
+       <a href="#"> <span class="side-menu">Log In/Sign Up</span></a>
       </div>
     </header>
 
@@ -74,7 +74,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"/><rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="9s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect><rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect></svg>
     <label for="timeLength" class="font-medium">Time Length of the Content</label>
     </div>
-    <input type="time" placeholder="time-length" id="timeLength" name="timeLength" class="placeholder-black rounded sm:w-80 w-44 p-2" required>
+    <input type="text" placeholder="time-length" id="timeLength" name="timeLength" class="placeholder-black rounded sm:w-80 w-44 p-2 outline-none" required>
   </div>
   <div class="flex flex-col space-y-2">
     <div class="flex items-center space-x-1">
@@ -102,7 +102,7 @@
           <th class="table-class">Type of Content</th>
           <th class="table-class">Author Name</th>
           <th class="table-class">Time Length</th>
-          <th class="table-class">Action</th>
+          <th class="table-class">Option</th>
         </tr>
         <tbody id="syllabusTable" name="syllabusTable"></tbody>
       </table>
