@@ -34,7 +34,7 @@ const data = [
 const DestinationPage = () => {
   const MapData = data.map((place) => {
     return (
-      <div className="flex justify-normal items-center space-x-4 p-2 rounded w-full hover:bg-[#ffd369]">
+      <div className="flex justify-normal items-center space-x-4 p-2 m-3 rounded w-full hover:bg-[#ffd369]">
         <img
           src={place.image}
           alt={place.place}
@@ -55,7 +55,7 @@ const DestinationPage = () => {
   return (
     <div className="m-10 bg-[url('https://www.creativefabrica.com/wp-content/uploads/2023/06/25/Hiking-Watercolor-Hikers-Clipart-PNG-Graphics-72948328-1.png')] bg-cover bg-no-repeat">
       <h4 className="text-3xl font-bold font-cabin text-center p-4 m-2 tracking-wider ">
-        Your Destination is here
+        Destination you like
       </h4>
 
       <div className="grid grid-rows-4 bg-slate-200/75 rounded" key="{data.id}">

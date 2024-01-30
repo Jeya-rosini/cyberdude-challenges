@@ -1,9 +1,9 @@
+import carousel from "../components/carousel"
+
 const HomePage = () => {
     return <div>
         <div>
-            <div>
-                <img src="https://www.bhmpics.com/downloads/hiking-wallpaper-/11.5418340-mountain-sunset-pastel-adventure-outdoor-cloud-sky-hiking-landscape-mountain-range-person-hike-explore-wallpaper-nature-wallpapers-nature-backgrounds-evening-altitude-horizon-colorful-free-sto.jpg" alt="wander image" className="h-60 w-full object-cover"></img>
-            </div>
+    {carousel()}
             <div className="m-4 p-2 text-center font-cabin tracking-wider">
                 <h5 className="font-bold text-4xl">Why <span className="text-[#FFD369]">Wander ?</span></h5>
                 <p className="first-letter:text-3xl text-xl p-2">Wandering, walking, trekking - helps to make better conclusion, give new ideas and insightfulness. Making your body and mind feel fresh and healthy. Prevent from Heart Disease. Strengthen relationships </p>
