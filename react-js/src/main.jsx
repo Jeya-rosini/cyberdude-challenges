@@ -30,6 +30,10 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <ContactPage/>,
             },
+            {
+                path: '/contact/:name',
+                element:<ContactPage/>
+            },
         ],
         errorElement:<ErrorPage/>
     },
