@@ -32,6 +32,7 @@ const data = [
 ];
 
 const DestinationPage = () => {
+
   const MapData = data.map((place) => {
     return (
       <div className="flex justify-normal items-center space-x-4 p-2 m-3 rounded w-full hover:bg-[#ffd369]">
@@ -59,7 +60,6 @@ const DestinationPage = () => {
       </h4>
 
       <div className="grid grid-rows-4 bg-slate-200/75 rounded" key="{data.id}">
-        {" "}
         {MapData}
       </div>
     </div>

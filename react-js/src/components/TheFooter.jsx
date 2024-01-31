@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import HomePage from "../pages/HomePage"
-import AboutPage from "../pages/AboutPage"
 import DestinationPage from "../pages/DestinationPage"
 import ContactPage from "../pages/ContactPage"
 
@@ -21,7 +20,6 @@ const footer = () => {
             <div class="grid grid-cols-2 gap-y-12 gap-x-4 text-md font-cabin tracking-wider p-4 m-4">
                 <div className="list-none">
                     <li><span><Link to={'/'} className="hover:text-[#ffd369] hover:cursor-pointer">Home</Link></span></li>
-                    <li> <span><Link to={'/about'} className="hover:text-[#ffd369] hover:cursor-pointer">About</Link></span></li>
                     <li> <span><Link to={'/destination'} className="hover:text-[#ffd369] hover:cursor-pointer">Destination</Link></span></li>
                     <li> <span><Link to={'/contact'} className="hover:text-[#ffd369] hover:cursor-pointer">Contact</Link></span></li>
                 </div>

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import HomePage from "../pages/HomePage"
-import AboutPage from "../pages/AboutPage"
 import DestinationPage from "../pages/DestinationPage"
 import ContactPage from "../pages/ContactPage"
 
