@@ -1,6 +1,5 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import "../src/assets/css/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Guest from "./layout/guest.jsx";
 import AboutPage from "./pages/AboutPage.jsx";

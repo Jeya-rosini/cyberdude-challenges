@@ -1,0 +1,43 @@
+[
+  {
+    "FullName": "Jeya Rosini",
+    "Address": {
+      "City": "Madurai",
+      "State": "Tamilnadu"
+    },
+    "About":"A person who ready face new challenges. Interested in coding and Learning new things everyday. My motto is - Creativity is the key to Success. Experienced in handling time, pressure management and team work.",
+    "Experience":{
+        "Place":"CyberDude Networks Pvt Ltd.,",
+        "Job":"Junior Full-stack Engineer",
+        "Title":"Intern",
+        "Period":"Sept 2023 - Present"
+    },
+    "Language":{
+        "Tamil":"Tamil - Expert",
+        "English": "English - Conversational",
+        "Hindi": "Hindi - Beginner"
+    },
+    "Contact": {
+      "GitHub": "https:\/\/github.com\/Jeya-rosini",
+      "LinkedIn": "https://www.linkedin.com/in/jeya-rosini-a4255421a/",
+      "MobileNo": "xxxxx xxx20",
+      "EmailId": "rosini@example.com"
+    },
+    "EducationUg": {
+      "Degree": "Bachelor of Chemistry",
+      "Year": "April- 2018"
+    },
+    "EducationPg": {
+      "PgDegree": "Master of Chemistry",
+      "PgYear": "April-2020"
+    },
+    "Skills": {
+      "HTML": "HTML",
+      "CSS":"CSS",
+      "TailwindCSS": "TailwindCSS",
+      "JavaScript":"JavaScript",
+      "ReactJS":"ReactJS",
+      "Figma":"Figma"
+    }
+  }
+]

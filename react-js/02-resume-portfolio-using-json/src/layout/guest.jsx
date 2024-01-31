@@ -1,17 +1,15 @@
 import React from "react";
 import TheNavbar from "../components/TheNavBar";
-import TheSidebar from "../components/TheSideBar";
-import {Outlet} from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import TheButton from "../components/TheButton";
 
 const Guest = () => {
-    return (
-        <>
-            <TheNavbar />
-            <TheSidebar/>
-            <Outlet />
-            
-        </>
-    )
-}
+  return (
+    <section className="bg-[#005f73] max-w-3xl mx-auto mt-5 rounded shadow-xl shadow-neutral-400">
+      <TheNavbar />
+      <Outlet />
+    </section>
+  );
+};
 
-export default Guest
+export default Guest;
