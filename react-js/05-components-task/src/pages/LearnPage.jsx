@@ -4,11 +4,11 @@ import CardWithButton from "../components/CardWithButton"
 const LearnPage = () => {
     return (
         <div className="bg-neutral-400 bg-opacity-55 m-5 p-5 rounded">
-            <div>
+            <div className="rounded">
                 <AlertSuccess/>
             </div>
             <div>
-            <h4 className="text-black font-guerrilla tracking-wider text-center text-2xl">
+            <h4 className="text-black font-guerrilla tracking-wider text-center text-4xl">
                 Choose the language
                 </h4>
                 <div className="grid grid-cols-3 gap-x-4 m-5 p-5">
