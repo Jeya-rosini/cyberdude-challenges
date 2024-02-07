@@ -5,7 +5,6 @@ import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Guest from './layout/Guest.jsx';
 import LearnPage from './pages/LearnPage.jsx';
-import HindiPage from './pages/HindiPage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx'
  
 
@@ -21,10 +20,6 @@ const languageRouter = createBrowserRouter([
       {
       path: '/learn',
       element: <LearnPage />,
-    },
-    {
-      path: '/Hindi',
-      element: <HindiPage />,
     },
     ],
     errorElement: <ErrorPage />

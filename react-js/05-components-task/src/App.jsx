@@ -1,3 +1,5 @@
+import CardWithImage from "./components/CardWithImage";
+
 const App = () => {
   return (
     <div className="bg-white bg-opacity-45 shadow-lg shadow-gray-700 m-5 rounded p-5">
@@ -13,7 +15,15 @@ const App = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M14.417 6.679C15.447 7.773 16 9 16 10.989c0 3.5-2.456 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.248-5.621c-.537.278-1.24.375-1.93.311C9.591 12.323 8.17 10.842 8.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.1.49 2.748 1.179"/></svg></p>
               <small className="italic m-4 text-lg">- Nelson Mandela</small>
               </div>
-          </div>
+      </div>
+      <div className="grid grid-cols-3 gap-y-4 items-center">
+        <CardWithImage img="https://cdn.filestackcontent.com/KnBxJ5rwQ8OQe0H8lOGx" plan="$2 per month" desc="✔ 7-days free trail"
+                   desc2=" ✔ Daily online challenges"/>
+        <CardWithImage img="https://nakito.com.my/wp-content/uploads/2020/07/gold-600x600.png" plan="$200 per month" desc="✔ Six-month training"
+                   desc2=" ✔ Work book online"/>
+        <CardWithImage img="https://laflarepr.com/cdn/shop/products/platinumelite.png?v=1652409503" plan="$500 per month" desc="✔ Skilled person to train and practice more"
+                   desc2=" ✔ Available pdf for work book"/>
+      </div>
     </div>
   );
 };
