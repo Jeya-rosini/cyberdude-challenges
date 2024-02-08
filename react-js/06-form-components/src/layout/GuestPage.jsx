@@ -1,13 +1,13 @@
 import TheNavbar from "../components/TheNavbar";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 const GuestPage = () => {
-    return (
-        <>
-            <TheNavbar />
-            <Outlet />
-        </>
-    )
-}
+  return (
+    <>
+      <TheNavbar />
+      <Outlet />
+    </>
+  );
+};
 
-export default GuestPage
+export default GuestPage;
