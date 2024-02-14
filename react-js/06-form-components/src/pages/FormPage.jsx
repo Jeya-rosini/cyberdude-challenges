@@ -1,14 +1,26 @@
 import FormInput from "../components/FormInput";
 import FormTextArea from "../components/FormTextArea";
 import SubmitButton from "../components/SubmitButton";
-import {useForm} from "react-hook-form";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+
+const formschema = z.object({
+  fullName: z.string().min(3).max(30),
+  location: z.string().min(2).max(40),
+  songName: z.string().min(3).max(60),
+movieName: z.string().min(1)
+})
 
 const FormPage = () => {
 
   const { register,
     formState: { errors },
     handleSubmit }
-    = useForm();
+    = useForm({
+      resolver: zodResolver(formschema)
+    });
   
   const onSubmit = (data) => {
     console.log("The input of the form is pushed to the server :", data);
@@ -22,7 +34,7 @@ const FormPage = () => {
             id="fullName"
             label="Your name"
             placeholder="Enter your name"
-            register={register("fullName",{required:"This field is required"})}
+            register={register("fullName")}
             error={errors.fullName}
             required
           />
@@ -30,7 +42,7 @@ const FormPage = () => {
             id="location"
             label="Your location"
             placeholder="Enter your location"
-            register={register("location", { required: "This field is required" })}
+            register={register("location")}
             error={errors.location}
             required
           />
@@ -39,7 +51,7 @@ const FormPage = () => {
               id="songName"
               label="Song you want to hear"
               placeholder="Song name"
-              register={register("songName", { required: "This field is required" })}
+              register={register("songName")}
               error={errors.songName}
               required
             />
@@ -47,7 +59,7 @@ const FormPage = () => {
               id="movieName"
               label="Movie name of the song"
               placeholder="Movie name"
-              register={register("movieName", { required: "This field is required" })}
+              register={register("movieName")}
               error={errors.movieName}
               required
             />
