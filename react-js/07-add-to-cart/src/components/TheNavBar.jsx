@@ -10,7 +10,7 @@ const TheNav = () => {
             <div className="flex items-center space-x-8 text-white font-semibold tracking-wide text-lg">
                 <span><Link to={'/'} className="hover:text-[#FFA5AB] hover:underline-offset-8 hover:underline">Home</Link></span>
                 <span><Link to={'/cart'} className="hover:text-[#FFA5AB] hover:underline-offset-8 hover:underline">Cart</Link></span>
-                <span><Link to="https://github.com/Jeya-rosini/cyberdude-challenges" target='blank' className="hover:text-[#FFA5AB] hover:underline-offset-8 hover:underline">GitHub</Link></span>
+                <span><Link to="https://github.com/Jeya-rosini/cyberdude-challenges/tree/main/react-js/07-add-to-cart" target='blank' className="hover:text-[#FFA5AB] hover:underline-offset-8 hover:underline">GitHub</Link></span>
                 <span><Link to="https://www.linkedin.com/in/jeya-rosini-a4255421a/" target='blank' className="hover:text-[#FFA5AB] hover:underline-offset-8 hover:underline">LinkedIn</Link></span>      
             </div>
         </div>
