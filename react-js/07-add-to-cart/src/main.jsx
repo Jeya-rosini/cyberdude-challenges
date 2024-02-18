@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "../src/App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import GuestPage from "./layout/GuestPage.jsx";
@@ -14,10 +13,6 @@ const cartRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
-      },
-      {
-        path: "/cart",
         element: <CartPage />,
       },
     ],
