@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import TheNavbar from "./components/TheNavbar";
+import Interns from "./components/InternsDisplay";
+import { useEffect, useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [interns, setInterns] = useState([]);
+  
+  useEffect(() => {
+     async function fetchList() {
+       const fetchData = await fetch("/api");
+       const data = await fetchData.json();
+       console.log(data);
+       setInterns(data)
+     }
+    fetchList();
+  }, [])
+
+  const mapData = interns.map((intern) => {
+    return (
+      <div className="p-2 font-anta tracking-widest">
+        <Interns
+          key={intern.id}
+          name={intern.name}
+          des={intern.designation}
+          gitHubName={intern.gitHubName}
+        />
+      </div>
+    );
+  });
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="mb-6">
+      <TheNavbar />
+      
+      <h4 className="m-4 p-2 text-white font-anta tracking-wider text-center font-bold text-3xl">List of Interns</h4>
+          {mapData}
+    </div>
+  );
+};
 
-export default App
+export default App;
