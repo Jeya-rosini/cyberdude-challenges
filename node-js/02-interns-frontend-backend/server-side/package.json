@@ -1,0 +1,17 @@
+{
+  "name": "server-side",
+  "version": "1.0.0-beta",
+  "description": "Simple app which connect server-side and client-side with displaying json data of the interns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "client",
+    "json-data",
+    "interns"
+  ],
+  "author": "Jeya-rosini",
+  "license": "MIT"
+}
