@@ -8,7 +8,6 @@ const FormInput = ({ type, id, placeholder, value, register, error }) => {
         name={id}
         id={id}
         placeholder={placeholder}
-      value={value}
         {...register}
         className="bg-[#C8AFA8] text-black w-full placeholder:text-black p-2 rounded outline-none font-semibold"
       />
