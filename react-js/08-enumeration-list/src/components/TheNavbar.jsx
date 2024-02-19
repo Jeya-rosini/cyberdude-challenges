@@ -26,7 +26,7 @@ const TheNavbar = () => {
       <div className="flex items-center space-x-2">
         <span>
           <Link
-            to="https://github.com/Jeya-rosini/cyberdude-challenges"
+            to="https://github.com/Jeya-rosini/cyberdude-challenges/tree/main/react-js/08-enumeration-list"
             target="blank"
           >
             <svg
