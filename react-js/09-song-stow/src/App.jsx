@@ -24,7 +24,7 @@ const App = () => {
         songs[array] = songs[index];
         songs[index] = temp;
       }
-      console.log(songs);
+      // console.log(songs);
       return songs;
     }
   }
