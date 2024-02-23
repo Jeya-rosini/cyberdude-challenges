@@ -13,6 +13,7 @@ const songFormSchema = z.object({
 });
 
 const Form = () => {
+
   const {
     register,
     handleSubmit,
@@ -32,6 +33,21 @@ const Form = () => {
     }
     reset();
   };
+
+  // const getVideoId = () => {
+  //   const regex =
+  //     /(?<=v=|\/v\/|\/embed\/|youtu.be\/|\/v=|\/embed=|youtu.be=|\/v\/|\/e\/|watch\?v=|v%3D|^youtu.be\/|embed\/|watch\?v=|\?v=)([^#\\&\\?]+).*/;
+  //   const match = url.match(regex);
+  //   return match && match[1];
+  //   // console.log(match && match[1]);
+  // };
+  // console.log(getVideoId);
+  // // const thumbnailUrl = `https://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+
+  // const handleChange = (e) => {
+  //   setUrl(e.target.value);
+  //   console.log(e.target.value);
+  // };
 
   return (
     <div>
@@ -59,7 +75,7 @@ const Form = () => {
           name="songLink"
           label="Enter YT link of the song"
           placeholder="Enter URL link here"
-          type="url"
+          type="text"
           register={register("songLink")}
           error={errors.songLink}
           required

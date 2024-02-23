@@ -1,6 +1,6 @@
 import propTypes from "prop-types";
 
-const FormInput = ({ label, type = "text", placeholder, id, register, error }) => {
+const FormInput = ({ label, value, type = "text", placeholder, id, register, error }) => {
   return (
     <div className="space-y-2 p-2">
       <label className="font-semibold">{label}</label>
@@ -8,6 +8,7 @@ const FormInput = ({ label, type = "text", placeholder, id, register, error }) =
         name={id}
         id={id}
         type={type}
+        value={value}
         placeholder={placeholder}
         {...register}
         className="p-2 rounded bg-slate-100 w-full outline-none"

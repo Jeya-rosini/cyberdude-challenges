@@ -11,22 +11,22 @@ import ButtonShuffle from "./components/ButtonShuffle";
 const App = () => {
   const [songs, setSongs] = useState([]);
   const [del, setDel] = useState(false);
-  // const [shuffle, setShuffle] = useState();
 
   function shuffle() {
-    if(songs.length > 0) {
-    let array = songs.length, temp, index;
-    while (array > 0) {
-      index = Math.floor(Math.random() * array);
-      array--;
-      temp = songs[array];
-      songs[array] = songs[index];
-      songs[index] = temp;
+    if (songs.length > 0) {
+      let array = songs.length,
+        temp,
+        index;
+      while (array > 0) {
+        index = Math.floor(Math.random() * array);
+        array--;
+        temp = songs[array];
+        songs[array] = songs[index];
+        songs[index] = temp;
+      }
+      console.log(songs);
+      return songs;
     }
-    console.log(songs);
-    return songs
-    
-  }
   }
   shuffle();
 
@@ -42,7 +42,7 @@ const App = () => {
       });
       setSongs(list);
       // console.log(list);
-    //  console.log(songs);
+      //  console.log(songs);
       if (querySnapshot.docs.length === 0) {
         alert("No songs has been recorded");
       }
@@ -116,7 +116,12 @@ const App = () => {
           </thead>
           {mapSongs}
         </table>
-        <ButtonShuffle onClick={shuffle}/>
+        <ButtonShuffle
+          onClick={() => {
+            shuffle;
+            setSongs(songs);
+          }}
+        />
       </section>
     </div>
   );
