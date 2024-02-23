@@ -1,7 +1,7 @@
-const ButtonShuffle = () => {
+const ButtonShuffle = ({onClick}) => {
   return (
     <div>
-      <button className="text-md flex items-center gap-x-1 bg-[#F4845F] hover:bg-[#F7B267] p-2 rounded m-2 font-semibold hover:cursor-pointer">
+      <button onClick={ onClick} className="text-md flex items-center gap-x-1 bg-[#F4845F] hover:bg-[#F7B267] p-2 rounded m-2 font-semibold hover:cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
